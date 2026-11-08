@@ -4,6 +4,11 @@ a simple C tool to spare ram space. designed for windows
 ## implementation
 the core of the program is `NtSetSystemInformation`, a native api in `ntdll.dll` that serves as a bridge between user mode and kernel mode.
 
+```C
+PFN_NtSetSystemInformation ntSet = 
+    (PFN_NtSetSystemInformation)GetProcAddress(ntdll, "NtSetSystemInformation");
+```
+
 ## usage
 |step|command value|operation|
 |:---|:---|:---|
