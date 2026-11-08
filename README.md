@@ -9,7 +9,7 @@ PFN_NtSetSystemInformation ntSet =
     (PFN_NtSetSystemInformation)GetProcAddress(ntdll, "NtSetSystemInformation");
 ```
 
-## usage
+## details
 |step|command value|operation|
 |:---|:---|:---|
 |empty working sets|`MEM_EMPTY_WORKINGSETS` (2)|strip inactive physical pages from all process working sets
